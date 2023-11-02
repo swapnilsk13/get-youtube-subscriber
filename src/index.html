@@ -15,7 +15,10 @@
             height: 100vh;
            
             margin: 0;
-           background: url('./image/background.jpg');
+           background: url('./image/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
             flex-direction: column;
             text-align: center;
         }
@@ -127,7 +130,7 @@
             <input type="text" id="subscriberIdInput" placeholder="Enter ID">
             <button id="subscriberIdButton">Subscriber by ID</button>
         </div>
-        <h5><b> Demo id :- </b> ( 652ebbc165194e4ed47766a5 )</h5>
+        <h5><b> Demo id :- </b> ( 653bf2b2e3d7d63290b7a153 )</h5>
        
 
 
@@ -156,13 +159,13 @@
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
                 // Redirect to "/subscribers"
-                window.location.href = "https://get-youtube-subscriber-2qhd.onrender.com/subscribers";
+                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com";
             });
 
             // Add a click event listener to the "Subscriber by Name" button
             subscriberNameButton.addEventListener("click", function() {
                 // Redirect to "/subscribers/name"
-                window.location.href = "https://get-youtube-subscriber-2qhd.onrender.com/subscribers/name";
+                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com";
             });
 
             // Add a click event listener to the "Subscriber by ID" button
@@ -175,13 +178,13 @@
                     alert("Please enter an ID.");
                 } else {
                     // Redirect to "/subscribers/:id" with the specific ID
-                    window.location.href = "https://get-youtube-subscriber-2qhd.onrender.com/subscribers/" + specificId;
+                    window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com" + specificId;
                 }
             });
              // Add a click event listener to the "API Docs" button
              apiDocsButton.addEventListener("click", function() {
     // Open the API documentation link in a new tab
-    window.open("https://get-youtube-subscriber-2qhd.onrender.com/api-docs/", "_blank");
+    window.open("https://get-youtube-subscriber-zl5i.onrender.com/api-docs/", "_blank");
 });
    });
 

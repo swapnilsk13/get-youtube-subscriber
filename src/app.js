@@ -110,15 +110,15 @@ app.get('/subscribers/:id', async (req, res) => {
 
 // Swagger configuration
 const swaggerDefinition = {
-  openapi: '3.0.0',
+  openapi: "3.0.0",
   info: {
-    title: 'Subscriber API',
-    version: '1.0.0',
-    description: 'API for managing subscribers',
+    title: "Subscriber API",
+    version: "1.0.0",
+    description: "API for managing subscribers",
   },
   servers: [
     {
-      url: 'https://get-youtube-subscriber-2qhd.onrender.com' 
+      url: "https://get-youtube-subscriber-zl5i.onrender.com",
     },
   ],
 };
