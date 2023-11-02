@@ -159,13 +159,13 @@
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
                 // Redirect to "/subscribers"
-                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com";
+                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com/subscriber";
             });
 
             // Add a click event listener to the "Subscriber by Name" button
             subscriberNameButton.addEventListener("click", function() {
                 // Redirect to "/subscribers/name"
-                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com";
+                window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com/subscriber/name";
             });
 
             // Add a click event listener to the "Subscriber by ID" button
@@ -178,7 +178,7 @@
                     alert("Please enter an ID.");
                 } else {
                     // Redirect to "/subscribers/:id" with the specific ID
-                    window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com" + specificId;
+                    window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com/" + specificId;
                 }
             });
              // Add a click event listener to the "API Docs" button
