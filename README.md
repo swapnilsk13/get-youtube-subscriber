@@ -53,11 +53,8 @@ The API provides the following endpoints for managing YouTube subscribers:
 
 ## API Endpoints
 - `GET /subscribers`: Get a list of all subscribers.
-- `POST /subscribers`: Add a new subscriber.
 - `GET /subscribers/name`: Get a list of subscribers with only the `name` and `subscribedChannel` fields.
-- `POST /subscribers/name`: Add a new subscriber with `name` and `subscribedChannel` fields.
 - `GET /subscribers/:id`: Get details of a subscriber by their ID.
-- `POST /subscribers/:id`: Add a new subscriber by providing `name` and `subscribedChannel`.
 
 If a subscriber with the specified `:id` is not found, the API will return an error message with a status code of 400.
 

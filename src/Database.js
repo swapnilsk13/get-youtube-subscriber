@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
-const subscriberModel = require('./models/subscribers')
+const subscriberModel = require('./model/subscribers')
 const data = require('./data')
 
 // Connect to DATABASE
 const DATABASE_URL ="mongodb+srv://swapnil:Swapnil@1234@cluster0.osumhuj.mongodb.net/";
-mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(DATABASE_URL);
 const db = mongoose.connection
 db.on('error', (err) => console.log(err))
 db.once('open', () => console.log('Contion staviled with mongo atlas...'))

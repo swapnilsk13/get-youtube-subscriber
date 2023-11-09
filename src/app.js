@@ -7,7 +7,7 @@ const app = express();
 
 
 // Import required modules
-const Subscriber = require('./models/subscribers'); // Import the Subscriber model
+const Subscriber = require('./model/subscribers'); // Import the Subscriber model
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -118,7 +118,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "https://get-youtube-subscriber-zl5i.onrender.com",
+      url: "https://get-youtube-subscriber-zl5i.onrender.com/",
     },
   ],
 };

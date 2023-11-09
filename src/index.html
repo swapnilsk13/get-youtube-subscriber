@@ -3,35 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" sizes="32*32" href="https://www.youtube.com/s/desktop/000d7185/img/favicon.ico" >
+    <link rel="icon" sizes="32*32" href="https://www.youtube.com/s/desktop/000d7185/img/favicon.ico">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Get YouTube Subscribers</title>
+
     <style>
+        /* Stylish background settings */
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-           
             margin: 0;
-           background: url('./image/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+            background: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             flex-direction: column;
             text-align: center;
         }
 
+        /* Stylish container for content */
         .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color:paleturquoise;
+            background-color: paleturquoise;
         }
 
+        /* Stylish heading */
         h1 {
             margin-top: 5px;
             color: #0c0c0c;
@@ -39,6 +44,7 @@
             white-space: nowrap;
         }
 
+        /* Stylish button for subscribers */
         button {
             background-color: rgb(214, 9, 9);
             color: #fff;
@@ -51,10 +57,12 @@
             transition: background-color 0.3s;
         }
 
+        /* Hover effect for the button */
         button:hover {
             background-color: pink;
         }
 
+        /* Stylish input field for text */
         input[type="text"] {
             width: 100%;
             padding: 10px;
@@ -63,25 +71,30 @@
             border-radius: 5px;
         }
 
+        /* Stylish button for form submission */
         button[type="submit"] {
             background-color: #28a745;
             transition: background-color 0.3s;
         }
 
+        /* Hover effect for the submit button */
         button[type="submit"]:hover {
             background-color: #218838;
         }
 
+        /* Flex container for responsiveness */
         .flex-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        /* Margin adjustment for smaller screens */
         .flex-container input {
             margin-right: 10px;
         }
 
+        /* Stylish text for subscriber count */
         .Subscribers {
             color: #564045;
             padding-left: 12rem;
@@ -109,38 +122,37 @@
                 margin: 10px 0;
                 width: 100%;
             }
-
-            
         }
     </style>
 </head>
 
 <body>
-    <img src="./image/alma.png" alt="AlmaBetter" style="width:20rem; margin-bottom: 20px;">
+    <!-- AlmaBetter logo -->
+    <img src="./images/alma.png" alt="AlmaBetter" style="width:20rem; margin-bottom: 20px;">
+
+    <!-- Main content container -->
     <div class="container">
+        <!-- Heading for the page -->
         <h1>Get YouTube Subscribers</h1>
-        
-        <button id="subscriberButton" >Subscribers</button>
+
+        <!-- Buttons for different subscriber views -->
+        <button id="subscriberButton">Subscribers</button>
         <button id="subscriberNameButton">Subscriber by Name</button>
-        
-            
-       
-        
+
+        <!-- Input field and button for subscriber by ID -->
         <div class="flex-container">
             <input type="text" id="subscriberIdInput" placeholder="Enter ID">
             <button id="subscriberIdButton">Subscriber by ID</button>
         </div>
+
+        <!-- Demo ID for reference -->
         <h5><b> Demo id :- </b> ( 6543dc811dbc3525b01ac002 )</h5>
-       
 
+        <!-- Button for accessing API Docs -->
+        <button style="color: rgb(237, 232, 232); background-color: #0c0c0c;" id="api-docs" target="_blank">API_Doc</button>
+    </div>
 
-        
-          <button style="color: rgb(237, 232, 232); background-color: #0c0c0c;" id="api-docs" target="_blank">API_Doc</button>
-       
-
-    <body>
-  
-
+    <!-- JavaScript to handle button clicks -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Get a reference to the "Subscribers" button element
@@ -154,7 +166,6 @@
 
             // Get a reference to the "API Docs" button element with the correct id
             var apiDocsButton = document.getElementById("api-docs");
-
 
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
@@ -181,13 +192,13 @@
                     window.location.href = "https://get-youtube-subscriber-zl5i.onrender.com/subscribers/" + specificId;
                 }
             });
-             // Add a click event listener to the "API Docs" button
-             apiDocsButton.addEventListener("click", function() {
-    // Open the API documentation link in a new tab
-    window.open("https://get-youtube-subscriber-zl5i.onrender.com/api-docs/", "_blank");
-});
-   });
 
+            // Add a click event listener to the "API Docs" button
+            apiDocsButton.addEventListener("click", function() {
+                // Open the API documentation link in a new tab
+                window.open("https://get-youtube-subscriber-zl5i.onrender.com/api-docs/", "_blank");
+            });
+        });
     </script>
 </body>
 
